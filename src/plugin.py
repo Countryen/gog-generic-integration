@@ -6,7 +6,7 @@ from galaxy.api.types import Game, Authentication, LicenseInfo
 from typing import Dict, List, Optional
 from datetime import datetime
 
-class PluginExample(Plugin):
+class GenericTextFilePlugin(Plugin):
     def __init__(self, reader, writer, token):
         super().__init__(
             # Not working: generic, unknown
