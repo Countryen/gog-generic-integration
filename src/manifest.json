@@ -1,0 +1,11 @@
+{
+    "name": "C0 Generic Integration",
+    "platform": "beamdog",
+    "guid": "55cc6f22-6b51-441e-9b8f-c1bb59d035de",
+    "version": "1.0",
+    "description": "Generic GOG2.0 Integration that reads games from a simple games.data file. Serves as substitute for not available Platforms.",
+    "author": "Countryen",
+    "email": "dev@countryen.de",
+    "url": "https://github.com/Countryen/gog-generic-integration",
+    "script": "plugin.py"
+}
