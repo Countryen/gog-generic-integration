@@ -6,5 +6,11 @@ $DataFile = ".\games.data"
 $LookupDir = Resolve-Path "$($Env:LOCALAPPDATA)\GOG.com\Galaxy\plugins\installed"
 $IntegrationName = "c0_generic"
 $Guid = "55cc6f22-6b51-441e-9b8f-c1bb59d035de"
+
+if ((Test-Path (Join-Path $LookupDir "$IntegrationName-$Guid")) -eq $false)
+{
+    New-Item -Path (Join-Path $LookupDir "$IntegrationName-$Guid") -ItemType Directory
+}
+
 Copy-Item -Force -Path "$SrcFolder\*" -Destination (Join-Path $LookupDir "$IntegrationName-$Guid") -Recurse
 Copy-Item -Force -Path "$DataFile" -Destination (Join-Path $LookupDir "$IntegrationName-$Guid")
