@@ -64,7 +64,7 @@ class GenericTextFilePlugin(Plugin):
 
 def main():
     """INTEGRATION: run plugin event loop"""
-    create_and_run_plugin(PluginExample, sys.argv)
+    create_and_run_plugin(GenericTextFilePlugin, sys.argv)
 
 def dirtydebug(path, text):
     """Dirty Debug Helper to log text to a file"""
