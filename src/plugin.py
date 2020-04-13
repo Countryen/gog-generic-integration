@@ -73,3 +73,42 @@ def dirtydebug(path, text):
 # INTEGRATION: run plugin event loop
 if __name__ == "__main__":
     main()
+
+### self._register_method:
+# "init_authentication"
+# "pass_login_credentials"
+# "import_owned_games"
+# "start_achievements_import"
+# "import_local_games"
+# "start_game_times_import"
+# "start_game_library_settings_import"
+# "start_os_compatibility_import"
+# "start_user_presence_import"
+# "start_local_size_import"
+# "import_subscriptions"
+# "start_subscription_games_import"
+
+### self._detect_feature:
+# Feature.ImportOwnedGames, ["get_owned_games"])
+# Feature.ImportAchievements, ["get_unlocked_achievements"])
+# Feature.ImportInstalledGames, ["get_local_games"])
+# Feature.LaunchGame, ["launch_game"])
+# Feature.InstallGame, ["install_game"])
+# Feature.UninstallGame, ["uninstall_game"])
+# Feature.ShutdownPlatformClient, ["shutdown_platform_client"])
+# Feature.ImportGameTime, ["get_game_time"])
+# Feature.LaunchPlatformClient, ["launch_platform_client"])
+# Feature.ImportFriends, ["get_friends"])
+# Feature.ImportGameLibrarySettings, ["get_game_library_settings"])
+# Feature.ImportOSCompatibility, ["get_os_compatibility"])
+# Feature.ImportUserPresence, ["get_user_presence"])
+# Feature.ImportLocalSize, ["get_local_size"])
+# Feature.ImportSubscriptions, ["get_subscriptions"])
+# Feature.ImportSubscriptionGames, ["get_subscription_games"])
+
+### self._register_notification
+# "launch_game"
+# "install_game"
+# "uninstall_game"
+# "shutdown_platform_client"
+# "launch_platform_client"       
