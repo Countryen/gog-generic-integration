@@ -37,9 +37,9 @@ if ((Test-Path $IntegrationFolder) -eq $false) {
 
 # Copy all of src (recursively), the data-file and the new manifest.json directly into the integration folder
 # We don't need folders named "__pycache__" though.
-Get-ChildItem $SrcFolder -Recurse 
-| Where-Object { $_.FullName -notmatch '__pycache__' } 
-| Copy-Item -Destination { Join-Path $IntegrationFolder $_.Fullname.Replace($SrcFolder, "") } -Force
+Get-ChildItem $SrcFolder -Recurse |
+Where-Object { $_.FullName -notmatch '__pycache__' } |
+Copy-Item -Destination { Join-Path $IntegrationFolder $_.Fullname.Replace($SrcFolder, "") } -Force
 
 Copy-Item -Force -Path "$DataFile" -Destination $IntegrationFolder
 ConvertTo-Json $Manifest | Out-File "$IntegrationFolder\manifest.json"
