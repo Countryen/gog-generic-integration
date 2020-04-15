@@ -4,10 +4,14 @@ The idea is, that you don't wan't to add all "shelf games" or games in stores th
 
 This integration allows you to put all titles in a simple text file and loads this text file as games into your library.
 
+# Any Questions/Problems?
+Feel free to open an issue (in English prefered, but German is also ok).
+
 **See note about used Platform ID to see why it connects as fake "Beamdog" below.**
 
 # How to Use
-- Clone/Download Release 1.0
+- Clone/Download latest release source code
+- Unzip into any folder on your desktop
 - Put your games into /install/games.data (each line one game)
 - Execute /install/install.ps1
 - Or do it manually:
@@ -22,6 +26,7 @@ This integration allows you to put all titles in a simple text file and loads th
 - Games can have **UTF-8** titles like (tm), (r), €, äöü, etc.
 - Only Titles are provided, **images and details** are loaded by GOG itself but only if the title matches a game existing on GOG
 - **Why does it use the Beamdog Platform ID:** GOG currently does support a "generic" platform ID, but it doesn't work. As there is no available platform ID that says "custom" and you are limited to officially supported ones, I just chose one. If you already use Beamdog but still want this integration, change the Platform ID in the `src/manifest.json` and the `src/plugin.py` prior to installation to whatever suits you.
+- Only tested on windows, but should work for other platforms, too.
 
 # Development
 - [Python 3.8](https://www.python.org/downloads/release/python-382/)
