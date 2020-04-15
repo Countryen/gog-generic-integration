@@ -1,0 +1,90 @@
+C:\ProgramData\GOG.com\Galaxy\logs\plugin-origin-7f53219b-4e2b-4591-9f4f-dfc5f4ba9eb0.log
+
+root 					DEBUG		Using proactor: IocpProactor
+galaxy.api.plugin 		INFO		Using local address: 127.0.0.1:55609
+galaxy.api.plugin 		INFO		Creating plugin for platform origin, version 0.35
+
+galaxy.task_manager 	DEBUG		Task manager plugin internal: creating task 0 (tick)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: creating task 0 (init_authentication)
+galaxy.task_manager 	DEBUG		Task manager plugin external: creating task 0 (init_authentication)
+galaxy.task_manager		DEBUG		Task manager plugin external: finished task 0 (init_authentication)
+galaxy.task_manager		DEBUG		Task manager jsonrpc server: finished task 0 (init_authentication)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: creating task 1 (import_owned_games)
+galaxy.task_manager 	DEBUG		Task manager plugin external: creating task 1 (import_owned_games)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: creating task 2 (import_local_games)
+galaxy.task_manager 	DEBUG		Task manager plugin external: creating task 2 (import_local_games)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: creating task 3 (import_friends)
+galaxy.task_manager 	DEBUG		Task manager plugin external: creating task 3 (import_friends)
+galaxy.task_manager 	DEBUG		Task manager plugin external: finished task 2 (import_local_games)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: finished task 2 (import_local_games)
+galaxy.task_manager 	DEBUG		Task manager plugin external: finished task 3 (import_friends)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: finished task 3 (import_friends)
+galaxy.task_manager 	DEBUG		Task manager plugin external: finished task 1 (import_owned_games)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: finished task 1 (import_owned_games)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: creating task 4 (start_achievements_import)
+galaxy.task_manager 	DEBUG		Task manager plugin external: creating task 4 (start_achievements_import)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: creating task 5 (start_game_times_import)
+galaxy.task_manager 	DEBUG		Task manager plugin external: creating task 5 (start_game_times_import)
+galaxy.task_manager 	DEBUG		Task manager plugin external: creating task 6 (game times import)
+galaxy.task_manager 	DEBUG		Task manager plugin external: finished task 5 (start_game_times_import)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: finished task 5 (start_game_times_import)
+galaxy.task_manager 	DEBUG		Task manager plugin external: finished task 6 (game times import)
+galaxy.task_manager 	DEBUG		Task manager plugin external: creating task 7 (achievements import)
+galaxy.task_manager 	DEBUG		Task manager plugin external: finished task 4 (start_achievements_import)
+galaxy.task_manager 	DEBUG		Task manager jsonrpc server: finished task 4 (start_achievements_import)
+galaxy.task_manager 	DEBUG		Task manager plugin external: finished task 7 (achievements import)
+
+galaxy.api.jsonrpc 		INFO		Handling request: id=0, method=get_capabilities, params={}
+root 					DEBUG		Sending data: {"jsonrpc": "2.0", "id": "0", "result": {"platform_name": "origin", "features": ["InstallGame", "ShutdownPlatformClient", "LaunchGame", "UninstallGame", "ImportInstalledGames", "ImportAchievements", "ImportGameTime", "ImportSubscriptionGames", "ImportGameLibrarySettings", "ImportFriends", "ImportOwnedGames", "ImportSubscriptions"], "token": "69998d60-f5ce-4604-8f77-9dbf626ffa43"}}
+
+galaxy.api.jsonrpc 		INFO		Handling request: id=1, method=initialize_cache, params={'data': '****'}
+root 	 				DEBUG		Sending data: {"jsonrpc": "2.0", "id": "1", "result": null}
+
+galaxy.api.jsonrpc 		INFO		Handling request: id=2, method=ping, params={}
+root 	 				DEBUG		Sending data: {"jsonrpc": "2.0", "id": "2", "result": null}
+
+galaxy.api.jsonrpc  	INFO		Handling request: id=3, method=init_authentication, params={'stored_credentials': '****'}
+root 	 				DEBUG		Sending data: {"jsonrpc": "2.0", "id": "3", "result": {"user_id": "1008881970101", "user_name": "Countryen0"}}
+
+galaxy.api.jsonrpc 		INFO		Handling request: id=4, method=import_owned_games, params={}
+root 	 				DEBUG		Sending data: {"jsonrpc": "2.0", "id": "4", "result": {"owned_games": [{"game_id": "OFB-EAST:109552299", "game_title": "The Sims\u2122 4", "license_	info	": {"license_type": "SinglePurchase"}}, {"game_id": "Origin.OFR.50.0002694", "game_title": "Apex Legends\u2122", "license_	info	": {"license_type": "SinglePurchase"}}]}}
+
+galaxy.api.jsonrpc 		INFO		Handling request: id=5, method=import_local_games, params={}
+root 	 				DEBUG		Sending data: {"jsonrpc": "2.0", "id": "5", "result": {"local_games": [{"game_id": "Origin.OFR.50.0002694", "local_game_state": 1}]}}
+
+galaxy.api.jsonrpc 		INFO		Handling request: id=6, method=import_friends, params={}
+root 	 				DEBUG		Sending data: {"jsonrpc": "2.0", "id": "6", "result": {"friend_	info	_list": [{"user_id": "1000507184765", "user_name": "Schlafentzug0"}, {"user_id": "2295235703", "user_name": "KosZill4"}, {"user_id": "2477370579", "user_name": "roderikbosss"}]}}
+
+galaxy.api.jsonrpc 		INFO		Handling request: id=7, method=start_achievements_import, params={'game_ids': ['OFB-EAST:109552299', 'Origin.OFR.50.0002694']}
+root 	 				DEBUG		Sending data: {"jsonrpc": "2.0", "id": "7", "result": null}
+
+galaxy.api.jsonrpc 		INFO		Handling request: id=8, method=start_game_times_import, params={'game_ids': ['OFB-EAST:109552299', 'Origin.OFR.50.0002694']}
+root 	 				DEBUG		Sending data: {"jsonrpc": "2.0", "id": "8", "result": null}
+
+galaxy.api.jsonrpc		INFO		Sending notification: method=store_credentials, params={'cookies': '****'}
+galaxy.api.jsonrpc		INFO		Sending notification: method=store_credentials, params={'cookies': '****'}
+galaxy.api.jsonrpc		INFO		Sending notification: method=push_cache, params={'data': '****'}
+galaxy.api.jsonrpc 		INFO		Sending notification: method=game_time_import_success, params={'game_time': GameTime(game_id='Origin.OFR.50.0002694', time_played=1907, last_played_time=1551549092)}
+galaxy.api.jsonrpc 		INFO		Sending notification: method=game_time_import_success, params={'game_time': GameTime(game_id='OFB-EAST:109552299', time_played=0, last_played_time=None)}
+galaxy.api.jsonrpc 		INFO		Sending notification: method=game_times_import_finished, params=None
+galaxy.api.jsonrpc 		INFO		Sending notification: method=push_cache, params={'data': '****'}
+galaxy.api.jsonrpc		INFO		Sending notification: method=game_achievements_import_success, params={'game_id': 'OFB-EAST:109552299', 'unlocked_achievements': []}
+galaxy.api.jsonrpc		INFO		Sending notification: method=game_achievements_import_success, params={'game_id': 'Origin.OFR.50.0002694', 'unlocked_achievements': [Achievement(unlock_time=1550412024, achievement_id='2', achievement_name='Team Player'), Achievement(unlock_time=1551298729, achievement_id='3', achievement_name='Fully Kitted'), Achievement(unlock_time=1550393486, achievement_id='4', achievement_name='Jumpmaster'), Achievement(unlock_time=1550413333, achievement_id='6', achievement_name='Kill Leader'), Achievement(unlock_time=1550779419, achievement_id='7', achievement_name='Apex Offense'), Achievement(unlock_time=1550353683, achievement_id='9', achievement_name='Apex Support')]}
+galaxy.api.jsonrpc		INFO		Sending notification: method=achievements_import_finished, params=None
+
+...
+galaxy.api.jsonrpc 		DEBUG		Received 55 bytes of data
+galaxy.api.jsonrpc 		INFO		Handling request: id=15, method=ping, params={}
+root 	 				DEBUG		Sending data: {"jsonrpc": "2.0", "id": "15", "result": null}
+root 	 				DEBUG		Local games cache is fresh enough
+...
+
+galaxy.api.jsonrpc 		INFO		Received EOF
+galaxy.api.jsonrpc 		INFO		Closing JSON-RPC server	not more messages will be read
+galaxy.api.plugin 		DEBUG		Plugin run loop finished
+galaxy.api.plugin 		INFO		Closing plugin
+galaxy.task_manager 	DEBUG		Task manager plugin internal: creating task 1 (shutdown)
+galaxy.api.plugin 		DEBUG		Waiting for plugin to close
+galaxy.task_manager 	DEBUG		Task manager plugin internal: finished task 1 (shutdown)
+galaxy.task_manager 	DEBUG		Task manager plugin internal: finished task 0 (tick)
+galaxy.api.plugin 		DEBUG		Plugin closed
