@@ -42,6 +42,6 @@ Where-Object { $_.FullName -notmatch '__pycache__' } |
 Copy-Item -Destination { Join-Path $IntegrationFolder $_.Fullname.Replace($SrcFolder, "") } -Force
 
 Copy-Item -Force -Path "$DataFile" -Destination $IntegrationFolder
-ConvertTo-Json $Manifest | Out-File "$IntegrationFolder\manifest.json"
+[System.IO.File]::WriteAllText("$IntegrationFolder\manifest.json", (ConvertTo-Json $Manifest))
 
 Write-Host -ForegroundColor Green "Installation done, please restart GOG Galaxy 2.0 now and connect integration from settings [Platform: $Platform, GUID: $Guid]."
